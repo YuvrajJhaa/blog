@@ -1,0 +1,22 @@
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    body{
+
+        background-color: #17141d;
+        color: white;
+    }
+    .bgc{
+        background: #17141d;
+        box-shadow: -1rem 0 3rem #000;
+        transition: .2s;
+    }
+    .bgc:hover{
+        transform: translateY(-1rem);
+    }
+    .bgc:hover ~ .bgc{
+        transform: translateX(130px);
+    }
+    .bgc:not(:first-child){
+        margin-left: -130px;
+    }
